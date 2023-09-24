@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Pangolin&display=swap");
+/* 
+font-family: 
+    Merienda-700,
+    Pangolin-400,
+*/
+
+/* Change Bootstrap default css */
+*::selection {
+    background-color: grey;
+    color: black;
+}
+h1 {
+    font-family: "Merienda", cursive;
+    color: white;
+}
+body {
+    font-family: "Pangolin", cursive;
+}
+label {
+    width: 100%;
+}
+input {
+    color: inherit !important;
+    padding: 0px !important;
+}
+input:focus {
+    box-shadow: none !important;
+    border-color: white;
+}
+form {
+    color: rgba(255, 255, 255, 0.7);
+}
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+.form-box {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+.min-text {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* Input fields */
+input[type="checkbox"] {
+    border: none;
+    background-color: grey;
+}
+input[type="checkbox"]:checked {
+    background-color: black;
+}
+input[type="number"] {
+    border-radius: 0%;
+    border-width: 0 0 1px;
+    border-color: rgb(100, 100, 100);
+}
+input[type="number"]:focus {
+    border-color: white;
+}
+/* Remove Spinner from input in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+/* Remove Spinner from input in Chrome, Safari, Edge, Opera*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
